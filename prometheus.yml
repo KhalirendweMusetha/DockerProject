@@ -2,10 +2,6 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'prometheus'
-    static_configs:
-      - targets: ['localhost:9090']
-
   - job_name: 'ec2_instance'
     static_configs:
-      - targets: ['3.87.213.167:9100'] # Put the actual IP address and port where ythe Node Exporter is running.
+      - targets: ['3.87.213.167:9100']
